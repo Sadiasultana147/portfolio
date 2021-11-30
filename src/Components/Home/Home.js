@@ -1,4 +1,5 @@
 import React from 'react';
+import About from '../About/About';
 import Background from '../Background/Background';
 import Form from '../Form/Form';
 import './Home.css'
@@ -8,9 +9,8 @@ const Home = () => {
         <div>
             <div>
                 <Background></Background>
-                {/* <div class="typing">
-                <h2 class="text-uppercase">Hello.....</h2>
-            </div> */}
+                <About></About>
+
             </div>
             <Form></Form>
         </div>

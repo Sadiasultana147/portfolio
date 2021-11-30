@@ -1,5 +1,37 @@
 
-
+.patterns {
+    height: 50vh;
+  }
+  
+  
+  
+  svg text {
+    font-family: Lora;
+   
+    stroke: #ffa5d8;
+    font-size: 70px;
+    font-weight: 400;
+    stroke-width: 3;
+   
+    animation: textAnimate 5s infinite alternate;
+    
+  }
+  
+  @keyframes textAnimate {
+    0% {
+      stroke-dasharray: 0 50%;
+      stroke-dashoffset:  20%;
+      fill:hsl(189, 68%, 75%)
+  
+    }
+    
+    100% {
+      stroke-dasharray: 50% 0;
+      stroke-dashoffstet: -20%;
+      fill: hsla(189, 68%, 75%,0%)
+    }
+    
+  }
 .wrapper {
     height: 150vh;
     width: 100%;
@@ -30,7 +62,7 @@
 }
 
 .boxes div:nth-child(1) {
-    top: 70%;
+    top: 40%;
     left: 10%;
     animation: box-animate 10s infinite
 }
