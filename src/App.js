@@ -4,7 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Home from './Components/Home/Home';
 import About from './Components/About/About';
-import NotFound from '../NotFound';
+import NotFound from './Components/NotFound/NotFound'
+
 
 function App() {
   return (
