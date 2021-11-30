@@ -2,6 +2,7 @@ import React from 'react';
 import About from '../About/About';
 import Background from '../Background/Background';
 import Form from '../Form/Form';
+import Skills from '../Skills/Skills';
 import './Home.css'
 
 const Home = () => {
@@ -9,7 +10,7 @@ const Home = () => {
         <div>
             <div>
                 <Background></Background>
-                <About></About>
+                <Skills></Skills>
 
             </div>
             <Form></Form>
