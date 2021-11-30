@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Home from './Components/Home/Home';
 import About from './Components/About/About';
+import NotFound from '../NotFound';
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
           </Route>
           <Route path="/about">
             <About></About>
+          </Route>
+          <Route to path="*" >
+            <NotFound></NotFound>
           </Route>
         </Switch>
       </BrowserRouter>
